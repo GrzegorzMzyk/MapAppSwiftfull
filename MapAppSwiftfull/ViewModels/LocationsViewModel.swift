@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import MapKit
 import _MapKit_SwiftUI
 
 class LocationsViewModel: ObservableObject {
@@ -15,6 +14,7 @@ class LocationsViewModel: ObservableObject {
     // Current location on map
     @Published var mapLocation: Location
     @Published var mapRegion: MapCameraPosition = MapCameraPosition.automatic
+    
     let mapSpam = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
     init() {
@@ -24,9 +24,9 @@ class LocationsViewModel: ObservableObject {
         self.updateMapRegion(location: locations.first!)
     }
     private func updateMapRegion(location:Location) {
-    
+     
             mapRegion = MapCameraPosition.region(MKCoordinateRegion(
-                center:location.coordinates,
+                center: location.coordinates,
                 span: mapSpam))
     }
 }
