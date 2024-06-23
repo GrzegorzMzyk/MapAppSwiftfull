@@ -7,6 +7,7 @@
 
 import Foundation
 import _MapKit_SwiftUI
+import SwiftUI
 
 class LocationsViewModel: ObservableObject {
     
@@ -30,9 +31,10 @@ class LocationsViewModel: ObservableObject {
         self.updateMapRegion(location: locations.first!)
     }
     private func updateMapRegion(location:Location) {
-     
+        withAnimation(.easeInOut) {
             mapRegion = MapCameraPosition.region(MKCoordinateRegion(
                 center: location.coordinates,
                 span: mapSpam))
+        }
     }
 }
