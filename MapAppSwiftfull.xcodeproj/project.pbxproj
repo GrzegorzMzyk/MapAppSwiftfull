@@ -14,6 +14,7 @@
 		198BD3BF2C28025F00BFD7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198BD3BE2C28025F00BFD7BA /* Assets.xcassets */; };
 		198BD3C42C2803D300BFD7BA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198BD3C32C2803D300BFD7BA /* Location.swift */; };
 		198BD3C72C2805E600BFD7BA /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198BD3C62C2805E600BFD7BA /* LocationsDataService.swift */; };
+		198BD3C92C28087800BFD7BA /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198BD3C82C28087800BFD7BA /* LocationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		198BD3BE2C28025F00BFD7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		198BD3C32C2803D300BFD7BA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		198BD3C62C2805E600BFD7BA /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		198BD3C82C28087800BFD7BA /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		198BD3C12C28037600BFD7BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				198BD3C82C28087800BFD7BA /* LocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				198BD3B12C26E2EB00BFD7BA /* ContentView.swift in Sources */,
 				198BD3B32C26E2EB00BFD7BA /* Item.swift in Sources */,
 				198BD3C42C2803D300BFD7BA /* Location.swift in Sources */,
+				198BD3C92C28087800BFD7BA /* LocationsView.swift in Sources */,
 				198BD3AF2C26E2EB00BFD7BA /* MapAppSwiftfullApp.swift in Sources */,
 				198BD3C72C2805E600BFD7BA /* LocationsDataService.swift in Sources */,
 			);
