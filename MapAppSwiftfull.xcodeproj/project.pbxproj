@@ -12,6 +12,7 @@
 		198BD3B32C26E2EB00BFD7BA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198BD3B22C26E2EB00BFD7BA /* Item.swift */; };
 		198BD3B82C26E2EC00BFD7BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198BD3B72C26E2EC00BFD7BA /* Preview Assets.xcassets */; };
 		198BD3BF2C28025F00BFD7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198BD3BE2C28025F00BFD7BA /* Assets.xcassets */; };
+		198BD3C42C2803D300BFD7BA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198BD3C32C2803D300BFD7BA /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		198BD3B22C26E2EB00BFD7BA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		198BD3B72C26E2EC00BFD7BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		198BD3BE2C28025F00BFD7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		198BD3C32C2803D300BFD7BA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,9 @@
 			children = (
 				198BD3AE2C26E2EB00BFD7BA /* MapAppSwiftfullApp.swift */,
 				198BD3B02C26E2EB00BFD7BA /* ContentView.swift */,
+				198BD3C12C28037600BFD7BA /* Views */,
+				198BD3C22C28038F00BFD7BA /* ViewModels */,
+				198BD3C02C28036500BFD7BA /* Models */,
 				198BD3B22C26E2EB00BFD7BA /* Item.swift */,
 				198BD3BE2C28025F00BFD7BA /* Assets.xcassets */,
 				198BD3B62C26E2EC00BFD7BA /* Preview Content */,
@@ -68,6 +73,28 @@
 				198BD3B72C26E2EC00BFD7BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		198BD3C02C28036500BFD7BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				198BD3C32C2803D300BFD7BA /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		198BD3C12C28037600BFD7BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		198BD3C22C28038F00BFD7BA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +169,7 @@
 			files = (
 				198BD3B12C26E2EB00BFD7BA /* ContentView.swift in Sources */,
 				198BD3B32C26E2EB00BFD7BA /* Item.swift in Sources */,
+				198BD3C42C2803D300BFD7BA /* Location.swift in Sources */,
 				198BD3AF2C26E2EB00BFD7BA /* MapAppSwiftfullApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
