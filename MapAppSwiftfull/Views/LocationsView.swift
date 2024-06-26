@@ -16,6 +16,13 @@ struct LocationsView: View {
     var body: some View {
         ZStack{
             Map(position: $vm.mapRegion)
+            
+            VStack(spacing: 0) {
+                header
+                    .padding()
+                
+                Spacer()
+            }
             }
         }
     }
@@ -24,4 +31,21 @@ struct LocationsView: View {
 #Preview {
     LocationsView()
         .environmentObject(LocationsViewModel())
+}
+extension LocationsView {
+    private var header: some View {
+        
+        VStack {
+            Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
+                .font(.title2)
+                .fontWeight(.black)
+                .foregroundStyle(Color.primary)
+                .frame(height:55)
+                .frame(maxWidth: .infinity)
+        }
+        .background(.thickMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .shadow(color: .black.opacity(0.3),
+                radius: 20, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 15)
+    }
 }
