@@ -42,6 +42,13 @@ extension LocationsView {
                 .foregroundStyle(Color.primary)
                 .frame(height:55)
                 .frame(maxWidth: .infinity)
+                .overlay(alignment: .leading) {
+                    Image(systemName: "arrowshape.down.fill")
+                        .font(.headline)
+                        .foregroundStyle(Color.primary)
+                        .padding()
+
+                }
         }
         .background(.thickMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 10))
